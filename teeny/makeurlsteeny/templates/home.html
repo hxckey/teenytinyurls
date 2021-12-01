@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div>
+      <div id="titlecontainer">
+        <h1>Teeny Tiny URL Maker</h1>
+      </div>
+      <div>
+        <form action="" method="POST">
+          {% csrf_token %}
+          <div>
+            <div>{{form.long_url}}</div>
+              <button type="submit">
+                Make it Teeny!
+              </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    {% if errors %}
+    <div role="alert">
+      <p>{{errors}}</p>
+    </div>
+    {% endif %}
+  
+    {% if new_url %}
+  
+    <div >
+      <h2 >Your teeny URL</h2>
+      <p>You're all set! No more long and painstaking urls for you!</p>
+      <p class="">{{new_url}}</p>
+      <p><span class="text-danger">Previous URL:</span> {{long_url}}</p>
+    </div>
+    {% endif %}
+  </div>
+  {% endblock body %}
+  
