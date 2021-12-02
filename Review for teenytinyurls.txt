@@ -1,0 +1,9 @@
+Review for teenytinyurlsSuggested improvements:1. Pipfile is missing.  At the moment, the user has to install the important packages themselves. For example Django would have to be installed by the user.	a. python -m pip install Django2. Would have been great to have a hyperlinked shortened URL3. Would be great to have a way to catch all the incorrect routes with a standard error message4. README was empty
+5. When the same url is entered 'Shorter with this long url already exists' appears. It could be better if the link would appear.
+6. The styling could be better, like bigger font size, form-button alignment etc.
+7. Would be great to have some error handling when the page url is attempted to get shortened
+It was great to see the following:1. Code is written in a clean manner and it is easy to read
+2. Nice implementation where the url character length is limited to 5 characters
+3. Great title
+4. Meets the requirements well
+5. Django was used well
